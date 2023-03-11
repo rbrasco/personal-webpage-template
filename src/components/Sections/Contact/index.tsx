@@ -3,8 +3,7 @@ import classNames from 'classnames';
 import {FC, memo} from 'react';
 import Image from 'next/image';
 
-import {contact, SectionId} from '../../../data/data';
-import {aboutData} from '../../../data/data';
+import {contact, SectionId, aboutData} from '../../../data/data';
 import {ContactType, ContactValue} from '../../../data/dataDef';
 import FacebookIcon from '../../Icon/FacebookIcon';
 import GithubIcon from '../../Icon/GithubIcon';
