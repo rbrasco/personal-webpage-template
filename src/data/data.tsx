@@ -8,6 +8,7 @@ import {
   SparklesIcon,
 } from '@heroicons/react/outline';
 
+// import resume_pdf from '../assets/cv_example.pdf';
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
@@ -69,7 +70,8 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Roger Brasco`,
+  name: "Person Name",
+  title: (str: string) => `I'm ${str}`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -86,7 +88,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: "/cv_example.pdf",
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
@@ -335,7 +337,7 @@ export const testimonial: TestimonialSection = {
  */
 
 export const contact: ContactSection = {
-  headerText: 'Get in touch.',
+  headerText: 'Get in touch',
   description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
   items: [
     {
