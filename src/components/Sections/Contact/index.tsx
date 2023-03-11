@@ -1,9 +1,9 @@
 import {DeviceMobileIcon, LocationMarkerIcon, MailIcon} from '@heroicons/react/outline';
 import classNames from 'classnames';
-import {FC, memo} from 'react';
 import Image from 'next/image';
+import {FC, memo} from 'react';
 
-import {contact, SectionId, aboutData} from '../../../data/data';
+import {aboutData, contact, SectionId} from '../../../data/data';
 import {ContactType, ContactValue} from '../../../data/dataDef';
 import FacebookIcon from '../../Icon/FacebookIcon';
 import GithubIcon from '../../Icon/GithubIcon';
@@ -68,8 +68,6 @@ const ContactValueMap: Record<ContactType, ContactValue> = {
 //   );
 // });
 
-
-
 const Contact: FC = memo(() => {
   const {profileImageSrc} = aboutData;
   const {headerText, description, items} = contact;
@@ -90,27 +88,27 @@ const Contact: FC = memo(() => {
             <p className="prose prose-sm text-gray-300 sm:prose-base">{description}</p>
           </div>
           <dl className="flex flex-col space-y-4 text-base text-neutral-500 sm:space-y-2">
-               {items.map(({type, text, href}) => {
-                const {Icon, srLabel} = ContactValueMap[type];
-                return (
-                  <div key={srLabel}>
-                    <dt className="sr-only">{srLabel}</dt>
-                    <dd className="flex items-center">
-                      <a
-                        className={classNames(
-                          '-m-2 flex rounded-md p-2 text-neutral-300 hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500',
-                          {'hover:text-white': href},
-                        )}
-                        href={href}
-                        target="_blank">
-                        <Icon aria-hidden="true" className="h-4 w-4 flex-shrink-0 text-neutral-100 sm:h-5 sm:w-5" />
-                        <span className="ml-3 text-sm sm:text-base">{text}</span>
-                      </a>
-                    </dd>
-                  </div>
-                );
-              })}
-            </dl>
+            {items.map(({type, text, href}) => {
+              const {Icon, srLabel} = ContactValueMap[type];
+              return (
+                <div key={srLabel}>
+                  <dt className="sr-only">{srLabel}</dt>
+                  <dd className="flex items-center">
+                    <a
+                      className={classNames(
+                        '-m-2 flex rounded-md p-2 text-neutral-300 hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500',
+                        {'hover:text-white': href},
+                      )}
+                      href={href}
+                      target="_blank">
+                      <Icon aria-hidden="true" className="h-4 w-4 flex-shrink-0 text-neutral-100 sm:h-5 sm:w-5" />
+                      <span className="ml-3 text-sm sm:text-base">{text}</span>
+                    </a>
+                  </dd>
+                </div>
+              );
+            })}
+          </dl>
         </div>
       </div>
     </Section>

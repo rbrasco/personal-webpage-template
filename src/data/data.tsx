@@ -70,7 +70,7 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: "Person Name",
+  name: 'Person Name',
   title: (str: string) => `I'm ${str}`,
   description: (
     <>
@@ -88,7 +88,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: "/cv_example.pdf",
+      href: '/cv_example.pdf',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,

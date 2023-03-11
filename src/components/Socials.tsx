@@ -12,8 +12,7 @@ const Socials: FC = memo(() => {
           href={href}
           key={label}
           rel="noopener noreferrer"
-          target='_blank'
-          >
+          target="_blank">
           <Icon className="h-5 w-5 align-baseline sm:h-6 sm:w-6" />
         </a>
       ))}
