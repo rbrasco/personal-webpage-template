@@ -8,7 +8,6 @@ import {
   SparklesIcon,
 } from '@heroicons/react/outline';
 
-// import resume_pdf from '../assets/cv_example.pdf';
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
@@ -48,6 +47,7 @@ export const homePageMeta: HomepageMeta = {
   title: 'React Resume Template',
   description: "Example site built with Tim Baker's react resume template",
   uri: 'https://rbrasco.github.io/personal-webpage-template',
+  path: 'personal-webpage-template'
 };
 
 /**
@@ -89,7 +89,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/cv_example.pdf',
+      href: `/${homePageMeta.path}/cv_example.pdf`,
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,

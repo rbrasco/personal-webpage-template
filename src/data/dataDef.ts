@@ -7,6 +7,7 @@ export interface HomepageMeta {
   title: string;
   description: string;
   uri?: string;
+  path?: string;
   ogImageUrl?: string;
   twitterCardType?: 'summary' | 'summary_large';
   twitterTitle?: string;
