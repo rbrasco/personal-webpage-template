@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import Link from 'next/link';
 import {FC, Fragment, memo, useCallback, useMemo, useState} from 'react';
 
-import {SectionId} from '../../data/data';
+import {homePageMeta, SectionId} from '../../data/data';
 import {useNavObserver} from '../../hooks/useNavObserver';
 
 export const headerID = 'headerNav';
@@ -124,8 +124,10 @@ const NavItem: FC<{
   inactiveClass: string;
   onClick?: () => void;
 }> = memo(({section, current, inactiveClass, activeClass, onClick}) => {
+  const {uri} = homePageMeta;
+
   return (
-    <Link href={`/#${section}`} passHref>
+    <Link href={`${uri}#${section}`} passHref>
       <a className={classNames(current ? activeClass : inactiveClass)} key={section} onClick={onClick}>
         {section}
       </a>
