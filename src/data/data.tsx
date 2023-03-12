@@ -47,7 +47,7 @@ export const homePageMeta: HomepageMeta = {
   title: 'React Resume Template',
   description: "Example site built with Tim Baker's react resume template",
   uri: 'https://rbrasco.github.io/personal-webpage-template',
-  path: 'personal-webpage-template'
+  path: 'personal-webpage-template',
 };
 
 /**
