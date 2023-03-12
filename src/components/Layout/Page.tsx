@@ -28,12 +28,12 @@ const Page: NextPage<HomepageMeta> = memo(({children, title, description}) => {
         <meta content={title} property="og:title" />
         <meta content={description} property="og:description" />
         <meta content={`${uri}${pathname}`} property="og:url" />
-        <meta content={`/${path}/favicon.ico`} property="og:image" />
+        <meta content={`${uri}favicon.ico`} property="og:image" />
 
         {/* Twitter: https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup */}
         <meta content={title} name="twitter:title" />
         <meta content={description} name="twitter:description" />
-        <meta content={`/${path}/favicon.ico`} property="twitter:image" />
+        <meta content={`${uri}favicon.ico`} property="twitter:image" />
       </Head>
       {children}
     </>
