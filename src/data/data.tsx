@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Elena\'s React Portfolio',
+  description: "React portfolio",
   uri: 'https://esanchez26.github.io/personal-webpage-template',
   path: 'personal-webpage-template',
 };
@@ -113,7 +113,7 @@ export const aboutData: About = {
     {label: 'Nationality', text: 'Spanish', Icon: FlagIcon},
     {label: 'Interests', text: 'Basketball, Music, Books', Icon: SparklesIcon},
     {label: 'Study', text: 'University of Barcelona', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Amazon Fulfillment Spain S.L', Icon: OfficeBuildingIcon},
+    {label: 'Employment', text: 'Amazon Fulfillment Spain Ltd', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -272,7 +272,7 @@ export const education: TimelineItem[] = [
        <li>Explored the geometry of Euclidean and non-Euclidean fields, which includes the study of the properties of space and distance</li>
        <li>Studied numerical computation, which involves the use of numerical methods and algorithms to solve mathematical problems</li>
        <li>Covered differential equations, which involves the study of equations that relate rates of change to other variables</li>
-       <li>Learned about physics, which involves the study of the fundamental laws of nature, including mechanics, electromagnetism, and thermodynamics.
+       <li>Learned about physics, which involves the study of the fundamental laws of nature, including mechanics, electromagnetism, and thermodynamics.</li>
          </ul>
      </p>,
   },
@@ -315,15 +315,14 @@ export const experience: TimelineItem[] = [
     location: 'Inetum (GFI Group)',
     title: 'Project Manager and Data Analysis Internship',
     content: (
-      <p>
-        Worked on project management and functional design of applications for the Barcelona City Council and La Generalitat, two important public institutions in Catalonia, Spain.
+      <p>Worked on project management and functional design of applications for the Barcelona City Council and La Generalitat, two important public institutions in Catalonia, Spain.
        <ul>
        <li>Contributed to the development of several applications, including GPA, SPICA, and AJG, which are likely to have a significant impact on the daily lives of citizens in Barcelona.</li>
-       <li> Collaborated with cross-functional teams to ensure that these applications met the specific needs and requirements of the end-users, while adhering to industry standards and best practices.</li>
-       <li> Conducted user research to gain insights into user needs and preferences, and used this information to inform the design and development of these applications.</li>
+       <li>Collaborated with cross-functional teams to ensure that these applications met the specific needs and requirements of the end-users, while adhering to industry standards and best practices.</li>
+       <li>Conducted user research to gain insights into user needs and preferences, and used this information to inform the design and development of these applications.</li>
        <li>Developed project plans, timelines, and budgets, and ensured that projects were completed on time and within budget.</li>
-       <li> Conducted regular project status meetings with stakeholders to ensure that they were kept up-to-date on project progress and any issues that arose.</li>
-       <li> Coordinated with developers, testers, and other team members to ensure that applications were developed and tested according to established quality standards.</li>
+       <li>Conducted regular project status meetings with stakeholders to ensure that they were kept up-to-date on project progress and any issues that arose.</li>
+       <li>Coordinated with developers, testers, and other team members to ensure that applications were developed and tested according to established quality standards.</li>
        <li>Conducted user testing to ensure that applications were easy to use and met the needs of end-users.</li>
         <li>Participated in the deployment and maintenance of these applications, ensuring that they continued to function effectively and meet the needs of end-users over time.</li>
       </ul>
@@ -387,5 +386,5 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/esanchez26'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/e-sanchezjulia//'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/e-sanchezjulia'},
 ];
