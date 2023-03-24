@@ -263,8 +263,7 @@ export const education: TimelineItem[] = [
     date: 'December 2022',
     location: 'University of Barcelona',
     title: 'Mathematics Degree',
-    content: <p>
-      During the Mathematics degree I expanded my knowledge mainly in the following areas: 
+    content: <p>During the Mathematics degree I expanded my knowledge mainly in the following areas:</p>
        <ul>
        <li>Studied algebra, which includes the study of algebraic structures such as groups, rings, and fields</li>
        <li>Learned about logic</li>
@@ -273,8 +272,8 @@ export const education: TimelineItem[] = [
        <li>Studied numerical computation, which involves the use of numerical methods and algorithms to solve mathematical problems</li>
        <li>Covered differential equations, which involves the study of equations that relate rates of change to other variables</li>
        <li>Learned about physics, which involves the study of the fundamental laws of nature, including mechanics, electromagnetism, and thermodynamics.</li>
-         </ul>
-     </p>,
+        </ul>
+,
   },
 
 ];
@@ -285,7 +284,6 @@ export const experience: TimelineItem[] = [
     location: 'Amazon Fulfillment Spain',
     title: 'Business Intelligence Analyst',
     content: (
-      <p>
         <ul>
           <li>Developed automated tools for real-time metrics reporting, allowing stakeholders to monitor performance and identify areas for improvement in a timely manner</li>
           <li>Managing the sustainability project for VendorFlex, which aims to reduce CO2 emissions by optimizing the network topology.</li>
@@ -293,7 +291,6 @@ export const experience: TimelineItem[] = [
           <li>Conducting data analysis to identify key trends and opportunities for process improvement, and developing actionable insights that inform decision-making at all levels of the organization.</li>
           <li>Collaborating with cross-functional teams to implement process improvements and drive operational excellence, ensuring that changes were sustainable and aligned with business objectives.</li>
         </ul>
-       </p>
     ),
   },
   {
@@ -301,13 +298,11 @@ export const experience: TimelineItem[] = [
     location: 'Shalion Data Services',
     title: 'Business Intelligence Analyst',
     content: (
-      <p>
        <ul>
        <li>Designed and managed the BI architecture for a large retail company, ensuring that data was collected, analyzed, and reported in a way that was accurate, reliable, and timely.</li>
        <li>Provided daily reports to customers that included key insights, trends, and performance metrics, helping them make data-driven decisions that improved business outcomes.</li>
        <li>Developed process automation tools for the operations team, streamlining key workflows and reducing the time and effort required to complete routine tasks.</li>
       </ul>
-      </p>
     ),
   },
         {
@@ -315,7 +310,7 @@ export const experience: TimelineItem[] = [
     location: 'Inetum (GFI Group)',
     title: 'Project Manager and Data Analysis Internship',
     content: (
-      <p>Worked on project management and functional design of applications for the Barcelona City Council and La Generalitat, two important public institutions in Catalonia, Spain.
+      <p>Worked on project management and functional design of applications for the Barcelona City Council and La Generalitat, two important public institutions in Catalonia, Spain.</p>
        <ul>
        <li>Contributed to the development of several applications, including GPA, SPICA, and AJG, which are likely to have a significant impact on the daily lives of citizens in Barcelona.</li>
        <li>Collaborated with cross-functional teams to ensure that these applications met the specific needs and requirements of the end-users, while adhering to industry standards and best practices.</li>
@@ -326,7 +321,6 @@ export const experience: TimelineItem[] = [
        <li>Conducted user testing to ensure that applications were easy to use and met the needs of end-users.</li>
         <li>Participated in the deployment and maintenance of these applications, ensuring that they continued to function effectively and meet the needs of end-users over time.</li>
       </ul>
-      </p>
     ),
   },
 ];
